@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.landing--page {
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/d0982892-13ac-4702-b9fa-87a410c1f2da/a232a4bb-f0ef-4a7a-b715-edf6627e4600/CO-es-20220321-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.landing--page::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.807), transparent);
+}
+
+.landing--page--vertical {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.824), transparent);
+}
+
+.landing--header {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 0px 45px;
+    margin-top: 10px;
+}
+
+.landing--headerLogo {
+    height: 90px;
+}
+
+.landing--headerLogo img {
+    height: 100%;
+}
+
+.landing--loginButton button {
+    width: 6vw;
+    background-color: red;
+    border: none;
+    outline: none;
+    height: 35px;
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px;
+    font-size: 1.3vw;
+}
+
+.landing--info {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    color: white;
+    z-index: 2;
+}
+
+.landing--info p:nth-child(1) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 3.4rem;
+    line-height: 1;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.landing--info p:nth-child(2) {
+    margin: 0;
+    line-height: 3;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.landing--info p:nth-child(3) {
+    margin: 0;
+    line-height: 2;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.landing--footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing--footer input {
+    width: 70%;
+    height: 60px;
+    font-size: 1em;
+}
+
+.landing--footer button {
+    display: inline-block;
+    height: 60px;
+    width: 30%;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 0;
+    letter-spacing: .1px;
+    font-size: 1.8vw;
+}
+
+@media screen and (min-width:600px) and (max-width:1300px) {
+    .landing--page {
+        height: 70vh;
+    }
+    .landing--page::after {
+        height: 100%;
+    }
+    .landing--page--vertical {
+        height: 0%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    .landing--footer button {
+        font-size: 3.5vw;
+    }
+    .landing--loginButton button {
+        font-size: 2vw;
+    }
+    .landing--page {
+        height: 80vh;
+    }
+    .landing--footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .landing--footer button {
+        margin-top: 20px;
+    }
+}

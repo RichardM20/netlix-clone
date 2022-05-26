@@ -1,0 +1,165 @@
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+    * {
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+    }
+    
+    .signin--page {
+        height: 100vh;
+        width: 100%;
+        object-fit: contain;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/3e521d6d-a53b-4c3f-a85f-dd77c06f7ac7/41fa58db-179c-447d-b6d3-cdf16b10d86e/CO-en-20220425-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    
+    .signin--page::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.39), transparent);
+    }
+    
+    .signin--page--vertical {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.39), transparent);
+    }
+    
+    .signin--header {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        padding: 20px 15px;
+        margin-top: 10px;
+    }
+    
+    .signin--headerLogo img {
+        width: 16%;
+    }
+    
+    .signin--form {
+        margin-top: 90px;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.767);
+        display: flex;
+        flex-direction: column;
+        height: 190vh;
+        width: 33%;
+        border-radius: 5px;
+        padding: 40px 70px;
+    }
+    
+    .signin--form h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.1rem;
+    }
+    
+    .signin--form--fields {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .signin--field {
+        padding-left: 20px;
+        background-color: rgb(54, 53, 53);
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        color: white;
+    }
+    
+    #field--email {
+        margin-bottom: 15px;
+    }
+    
+    #field--password {
+        margin-bottom: 35px;
+    }
+    
+    .signin--button {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(211, 9, 9);
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    .remember {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        color: rgb(165, 165, 165);
+        font-size: 0.9rem;
+    }
+    
+    .remember-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .remember a {
+        color: rgb(165, 165, 165);
+    }
+    
+    .signin--facebook-login {
+        cursor: pointer;
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 0.9rem;
+        color: rgb(165, 165, 165);
+    }
+    
+    .signin--facebook-login img {
+        width: 6.5%;
+        margin-right: 10px;
+    }
+    
+    .signup {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: rgb(165, 165, 165);
+    }
+    
+    .signup p {
+        margin-right: 5px;
+    }
+    
+    .signup span:hover {
+        cursor: pointer;
+        color: white;
+    }
