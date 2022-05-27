@@ -68,7 +68,7 @@ function Cards() {
                     <Accordion />
                 </div>
                 <div className="landing--questions--bottom">
-                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                    <p id='p'>Ready to watch? Enter your email to create or restart your membership.</p>
                     <div className='landing--questions-botom-content'>
                         <input className='questions--landing--inputEmail' type="email" placeholder='Enter your email' />
                         <button className='questions--landing--buttonGetstarted'>Get Started</button>

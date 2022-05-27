@@ -19,7 +19,7 @@ function CustomAccordion() {
                         <div className="accordion--item" onClick={() => toggle(index)}>
                             <div className="accordion--item-title">
                                 <p>{item.title}</p>
-                                <FontAwesomeIcon icon={clicked === index ? faMinus : faPlus} />
+                                <FontAwesomeIcon id="icon" icon={clicked === index ? faMinus : faPlus} />
                             </div>
                             <div className={clicked === index ? "accordion--item-content show" : "accordion--item-content"}>
                                 <p>{item.content}</p>

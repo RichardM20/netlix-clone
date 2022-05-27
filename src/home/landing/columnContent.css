@@ -323,218 +323,710 @@ a {
     font-size: 1.1rem;
 }
 
-@media screen and (min-width: 320px) and (max-width:500px) {
-    #mobile-title,
-    #devices-title,
-    #watch-title,
-    #questions-title,
-    #kids-title {
-        font-size: 8vw;
-        text-align: center;
-    }
-    .landing--watchContent {
-        margin: 0;
-        padding: 0;
-        height: 50vh;
-    }
-    .landing--watchContext--text {
-        width: 100%;
-        height: 100%;
-    }
-    .landing--watchContext--text h1 {
-        font-size: 1vw;
-        box-sizing: border-box;
-    }
-    .landing--watchContext--text p {
-        font-size: 1vw;
-        box-sizing: border-box;
-    }
-    .landing--watchContext--img {
-        margin-top: 100px;
-        width: 100%;
-    }
-    .landing--watchContext--img img {
-        width: 100%;
-    }
-    .landing--watchContext--img video {
-        width: 100%;
-    }
-    .landing--mobileWatch {
-        height: 50vh;
-        margin: 0;
-        padding: 0;
-    }
-    .landing--mobileWatch--text {
-        width: 100%;
-        text-align: center;
-    }
-    .landing--mobileWatch--media {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    .landing--mobileWatch--container {
-        width: 100%;
-        display: none;
-        margin-bottom: 30px;
-    }
-    #img-mobile {
-        width: 60%;
-    }
-    .textRow {
-        margin-left: 20px;
-    }
-    .landing--devices {
-        height: 50vh;
-        margin: 0;
-        padding: 0;
-    }
-    .landing--devices--text {
-        width: 100%;
-    }
-    .landing--kidsContent {
-        height: 50vh;
-        padding: 0;
-    }
-    .landing--kidsContent--text {
-        margin-top: 20px;
-    }
-    .landing--kidsContent--media {
-        height: 100%;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width:520px) {
-    #mobile-title,
-    #devices-title,
-    #watch-title,
-    #questions-title,
-    #kids-title {
-        font-size: 7vw;
-        text-align: center;
-    }
-    #mobile-content,
-    #devices-content,
-    #watch-content,
-    #questions-content,
-    #kids-content {
-        font-size: 5vw;
-        text-align: center;
-    }
-    .landing--watchContent {
-        margin: 0;
-        padding: 0;
-        height: 70vh;
-    }
-    .landing--watchContext--text {
-        width: 100%;
-        height: 100%;
-    }
-    .landing--watchContext--text h1 {
-        font-size: 1vw;
-        box-sizing: border-box;
-    }
-    .landing--watchContext--text p {
-        font-size: 1vw;
-        box-sizing: border-box;
-    }
-    .landing--watchContext--img {
-        margin-top: 100px;
-        width: 100%;
-    }
-    .landing--watchContext--img img {
-        width: 100%;
-    }
-    .landing--watchContext--img video {
-        width: 100%;
-    }
-    .landing--mobileWatch {
-        height: 70vh;
-        margin: 0;
-        padding: 0;
-    }
-    .landing--mobileWatch--text {
-        width: 100%;
-        text-align: center;
-    }
-    .landing--mobileWatch--media {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    .landing--mobileWatch--container {
-        width: 100%;
-        margin-bottom: 30px;
-        display: none;
-    }
-    #img-mobile {
-        width: 65%;
-    }
-    .textRow {
-        margin-left: 20px;
-    }
-    .landing--devices {
-        height: 70vh;
-        margin: 0;
-        padding: 0;
-    }
-    .landing--devices--text {
-        width: 100%;
-    }
-    .landing--kidsContent {
-        height: 70vh;
-        padding: 0;
-    }
-    .landing--kidsContent--text {
-        margin-top: 20px;
-    }
-    .landing--kidsContent--media {
-        height: 100%;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width:700px) {
+@media screen and (min-width:300px) and (max-width:350px) {
     .landing--watchContent {
         display: flex;
         flex-direction: column;
-        height: 50vh;
+        height: 41%;
+        box-sizing: border-box;
+    }
+    .landing--watchContext--text {
+        width: 90%;
+        text-align: center;
+        z-index: 2;
+    }
+    .landing--watchContext--text h1 {
+        font-size: 6vw;
+    }
+    .landing--watchContext--text p {
+        font-size: 3.5vw;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -60px;
+    }
+    .landing--watchContext--img {
+        margin: 0;
+        width: 100%;
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+    .landing--watchContext--img img {
+        height: 100%;
+        width: 80%;
+    }
+    .landing--watchContext--img video {
+        height: 100%;
+        width: 55%;
+    }
+    .landing--mobileWatch {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 41%;
+    }
+    .landing--mobileWatch--text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: -10px;
+    }
+    .landing--mobileWatch--text h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .landing--mobileWatch--text p {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    .landing--mobileWatch--media {
+        height: 80%;
+        width: 70%;
+        margin-bottom: 35px;
+    }
+    .landing--mobileWatch--container {
+        display: none;
+    }
+    .landing--devices {
+        display: flex;
+        flex-direction: column;
+        height: 41%;
+    }
+    .landing--devices--text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .landing--devices--text h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .landing--devices--text p {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    .landing--devices--media {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .landing--devices--media img {
+        width: 78%;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+    #img-mobile {
+        margin-bottom: -23px;
+        width: 59%;
+    }
+    .landing--mobileWatch--container {
+        padding: 0 10px;
+        width: 60%;
+        margin-bottom: -3px;
+    }
+    .textRow {
+        z-index: 2;
+        margin-left: 80px;
+    }
+    #icon-mobile {
+        width: 17%;
+        margin-left: 6px;
+    }
+    .landing--kidsContent {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 41%;
+    }
+    .landing--kidsContent--text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing--kidsContent--text h1 {
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: 20px;
+    }
+    .landing--kidsContent--text p {
+        text-align: center;
+        font-size: 3.5vw;
+        margin-top: -10px;
+    }
+    .landing--kidsContent--media {
+        height: 100%;
+        width: 100%;
+    }
+    .landing--kidsContent--media img {
+        width: 76%;
+    }
+    .landing--questions--bottom p {
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .landing--questions-botom-content {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .landing--questions-botom-content input {
+        width: 88%;
+        height: 35px;
+    }
+    .landing--questions-botom-content button {
+        margin-top: 20px;
+        height: 35px;
+        width: 40%;
+        font-size: 16.5px;
+    }
+    .landing--questions h1 {
+        width: 100%;
+        margin-top: 55px;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .landing--questions--bottom p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:380px) {
+    .landing--watchContent {
+        display: flex;
+        flex-direction: column;
+        height: 45%;
+        box-sizing: border-box;
+    }
+    .landing--watchContext--text {
+        width: 90%;
+        text-align: center;
+        z-index: 2;
+    }
+    .landing--watchContext--text h1 {
+        font-size: 6vw;
+    }
+    .landing--watchContext--text p {
+        font-size: 3.5vw;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -60px;
+    }
+    .landing--watchContext--img {
+        margin: 0;
+        width: 100%;
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+    .landing--watchContext--img img {
+        height: 100%;
+        width: 80%;
+    }
+    .landing--watchContext--img video {
+        height: 100%;
+        width: 55%;
+    }
+    .landing--mobileWatch {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 45%;
+    }
+    .landing--mobileWatch--text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: -10px;
+    }
+    .landing--mobileWatch--text h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .landing--mobileWatch--text p {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    .landing--mobileWatch--media {
+        height: 80%;
+        width: 70%;
+        margin-bottom: 35px;
+    }
+    .landing--mobileWatch--container {
+        display: none;
+    }
+    .landing--devices {
+        display: flex;
+        flex-direction: column;
+        height: 45%;
+    }
+    .landing--devices--text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .landing--devices--text h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .landing--devices--text p {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    .landing--devices--media {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .landing--devices--media img {
+        width: 78%;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+    #img-mobile {
+        margin-bottom: -23px;
+        width: 59%;
+    }
+    .landing--mobileWatch--container {
+        padding: 0 10px;
+        width: 60%;
+        margin-bottom: -3px;
+    }
+    .textRow {
+        z-index: 2;
+        margin-left: 80px;
+    }
+    #icon-mobile {
+        width: 17%;
+        margin-left: 6px;
+    }
+    .landing--kidsContent {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 45%;
+    }
+    .landing--kidsContent--text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing--kidsContent--text h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .landing--kidsContent--text p {
+        text-align: center;
+        font-size: 3.5vw;
+        margin-top: -10px;
+    }
+    .landing--kidsContent--media {
+        height: 100%;
+        width: 100%;
+    }
+    .landing--kidsContent--media img {
+        width: 76%;
+    }
+    .landing--questions--bottom p {
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .landing--questions-botom-content {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .landing--questions-botom-content input {
+        width: 85%;
+        height: 50px;
+    }
+    .landing--questions-botom-content button {
+        margin-top: 20px;
+        height: 47px;
+        width: 30%;
+        font-size: 16.5px;
+    }
+    .landing--questions h1 {
+        width: 100%;
+        margin-top: 55px;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .landing--questions--bottom p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width:380px) and (max-width:410px) {
+    .landing--watchContent {
+        display: flex;
+        flex-direction: column;
+        height: 47%;
+        box-sizing: border-box;
+    }
+    .landing--watchContext--text {
+        width: 90%;
+        text-align: center;
+        z-index: 2;
+    }
+    .landing--watchContext--text h1 {
+        font-size: 6vw;
+    }
+    .landing--watchContext--text p {
+        font-size: 3.5vw;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -60px;
+    }
+    .landing--watchContext--img {
+        margin: 0;
+        width: 100%;
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+    .landing--watchContext--img img {
+        height: 100%;
+        width: 80%;
+    }
+    .landing--watchContext--img video {
+        height: 100%;
+        width: 55%;
+    }
+    .landing--mobileWatch {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 50%;
+    }
+    .landing--mobileWatch--text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: -10px;
+    }
+    .landing--mobileWatch--text h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .landing--mobileWatch--text p {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    .landing--mobileWatch--media {
+        height: 80%;
+        width: 70%;
+        margin-bottom: 35px;
+    }
+    .landing--mobileWatch--container {
+        display: none;
+    }
+    .landing--devices {
+        display: flex;
+        flex-direction: column;
+        height: 48%;
+    }
+    .landing--devices--text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .landing--devices--text h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .landing--devices--text p {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    .landing--devices--media {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .landing--devices--media img {
+        width: 78%;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+    #img-mobile {
+        margin-bottom: -23px;
+        width: 59%;
+    }
+    .landing--mobileWatch--container {
+        padding: 0 10px;
+        width: 60%;
+        margin-bottom: -3px;
+    }
+    .textRow {
+        z-index: 2;
+        margin-left: 80px;
+    }
+    #icon-mobile {
+        width: 17%;
+        margin-left: 6px;
+    }
+    .landing--kidsContent {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 48%;
+    }
+    .landing--kidsContent--text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing--kidsContent--text h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .landing--kidsContent--text p {
+        text-align: center;
+        font-size: 3.5vw;
+        margin-top: -10px;
+    }
+    .landing--kidsContent--media {
+        height: 100%;
+        width: 100%;
+    }
+    .landing--kidsContent--media img {
+        width: 76%;
+    }
+    .landing--questions--bottom p {
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .landing--questions-botom-content {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .landing--questions-botom-content input {
+        width: 85%;
+        height: 50px;
+    }
+    .landing--questions-botom-content button {
+        margin-top: 20px;
+        height: 47px;
+        width: 30%;
+        font-size: 16.5px;
+    }
+    .landing--questions h1 {
+        width: 100%;
+        margin-top: 55px;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .landing--questions--bottom p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width:410px) and (max-width:500px) {
+    #question-title {
+        text-align: center;
+    }
+    .landing--watchContent {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+    }
+    .landing--watchContext--text {
+        width: 90%;
+        text-align: center;
+        z-index: 2;
+    }
+    .landing--watchContext--text h1 {
+        font-size: 7vw;
+    }
+    .landing--watchContext--text p {
+        font-size: 4vw;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -19px;
+    }
+    .landing--watchContext--img {
+        width: 100%;
+        z-index: 1;
+    }
+    .landing--watchContext--img img {
+        height: 100%;
+        width: 85%;
+    }
+    .landing--watchContext--img video {
+        height: 100%;
+        width: 55%;
+    }
+    .landing--mobileWatch {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 60%;
+    }
+    .landing--mobileWatch--text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: -30px;
+    }
+    .landing--mobileWatch--text h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    .landing--mobileWatch--text p {
+        text-align: center;
+        font-size: 4vw;
+    }
+    .landing--mobileWatch--media {
+        height: 80%;
+        width: 70%;
+        margin-bottom: 35px;
+    }
+    .landing--mobileWatch--container {
+        width: 35%;
+        margin-bottom: 50px;
+    }
+    .textRow {
+        margin-left: 70px;
+    }
+    .landing--devices {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+    }
+    .landing--devices--text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .landing--devices--text h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    .landing--devices--text p {
+        text-align: center;
+        font-size: 4vw;
+    }
+    .landing--devices--media {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .landing--devices--media img {
+        width: 78%;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+    #img-mobile {
+        margin-bottom: -23px;
+        width: 59%;
+    }
+    .landing--mobileWatch--container {
+        padding: 0 10px;
+        width: 60%;
+        margin-bottom: -3px;
+    }
+    .textRow {
+        z-index: 2;
+        margin-left: 80px;
+    }
+    #icon-mobile {
+        width: 17%;
+        margin-left: 6px;
+    }
+    .landing--kidsContent {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 60%;
+    }
+    .landing--kidsContent--text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing--kidsContent--text h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    .landing--kidsContent--text p {
+        text-align: center;
+        font-size: 4vw;
+        margin-top: -10px;
+    }
+    .landing--kidsContent--media {
+        height: 100%;
+        width: 100%;
+    }
+    .landing--kidsContent--media img {
+        width: 76%;
+    }
+    .landing--questions--bottom p {
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .landing--questions-botom-content {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    .landing--questions-botom-content input {
+        width: 85%;
+        height: 50px;
+    }
+    .landing--questions-botom-content button {
+        margin-top: 20px;
+        height: 47px;
+        width: 30%;
+        font-size: 16.5px;
+    }
+    .landing--questions h1 {
+        width: 100%;
+        margin-top: 55px;
+        font-size: 6vw;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
+    .landing--watchContent {
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        padding-bottom: 40px;
+        box-sizing: border-box;
     }
     .landing--watchContext--text {
         width: 80%;
         height: 30%;
         text-align: center;
         z-index: 2;
-        margin-top: 20px;
-        margin-bottom: -100px;
     }
     .landing--watchContext--text h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .landing--watchContext--text p {
         font-size: 1.3rem;
     }
     .landing--watchContext--img {
         width: 100%;
-        height: 80%;
         z-index: 1;
-        margin-bottom: 40px;
     }
     .landing--watchContext--img img {
+        height: 100%;
         width: 80%;
     }
     .landing--watchContext--img video {
-        width: 56%;
+        height: 100%;
+        width: 52%;
     }
     .landing--mobileWatch {
         display: flex;
         flex-direction: column-reverse;
-        height: 50vh;
+        height: 70%;
     }
     .landing--mobileWatch--text {
         width: 85%;
@@ -543,9 +1035,11 @@ a {
         margin-bottom: -20px;
     }
     .landing--mobileWatch--text h1 {
-        font-size: 2.5rem;
+        text-align: center;
+        font-size: 2rem;
     }
     .landing--mobileWatch--text p {
+        text-align: center;
         font-size: 1.3rem;
     }
     .landing--mobileWatch--media {
@@ -563,31 +1057,51 @@ a {
     .landing--devices {
         display: flex;
         flex-direction: column;
-        height: 50vh;
+        height: 70%;
     }
     .landing--devices--text {
-        margin-top: 40px;
         width: 80%;
         text-align: center;
     }
     .landing--devices--text h1 {
-        font-size: 2.5rem;
+        text-align: center;
+        font-size: 2rem;
     }
     .landing--devices--text p {
+        text-align: center;
         font-size: 1.3rem;
     }
     .landing--devices--media {
-        margin-top: -29px;
         width: 100%;
         height: 100%;
+        box-sizing: border-box;
     }
     .landing--devices--media img {
-        width: 90%;
+        width: 78%;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+    #img-mobile {
+        margin-bottom: -23px;
+        width: 59%;
+    }
+    .landing--mobileWatch--container {
+        padding: 0 10px;
+        width: 60%;
+        margin-bottom: -3px;
+    }
+    .textRow {
+        z-index: 2;
+        margin-left: 80px;
+    }
+    #icon-mobile {
+        width: 17%;
+        margin-left: 6px;
     }
     .landing--kidsContent {
         display: flex;
         flex-direction: column-reverse;
-        height: 50vh;
+        height: 70%;
     }
     .landing--kidsContent--text {
         width: 80%;
@@ -595,54 +1109,48 @@ a {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        height: 40%;
-        margin-bottom: -59px;
     }
     .landing--kidsContent--text h1 {
-        margin-bottom: -9px;
-        font-size: 2.5rem;
+        text-align: center;
+        font-size: 2rem;
     }
     .landing--kidsContent--text p {
+        margin: 0;
         text-align: center;
         font-size: 1.3rem;
     }
     .landing--kidsContent--media {
         height: 100%;
         width: 100%;
-        margin-bottom: 50px;
     }
     .landing--kidsContent--media img {
-        width: 80%;
+        width: 76%;
+    }
+    .landing--questions--bottom p {
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+    }
+    #question-title {
+        text-align: center;
     }
     .landing--questions-botom-content {
+        width: 100%;
         flex-direction: column;
         display: flex;
     }
+    .landing--questions-botom-content input {
+        width: 85%;
+        height: 50px;
+    }
     .landing--questions-botom-content button {
         margin-top: 20px;
+        height: 47px;
         width: 20%;
-        font-size: 18px;
+        font-size: 16.5px;
     }
     .landing--questions h1 {
         margin-top: 55px;
         font-size: 2rem;
-    }
-}
-
-@media screen and (min-width:700px) and (max-width:1300px) {
-    .landing--watchContent {
-        height: 60vh;
-    }
-    .landing--mobileWatch {
-        height: 60vh;
-    }
-    .landing--devices {
-        height: 60vh;
-    }
-    .landing--kidsContent {
-        height: 60vh;
-    }
-    .textRow {
-        margin-left: 80px;
     }
 }
